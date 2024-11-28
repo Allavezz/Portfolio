@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.header {
+	background-color: var(--bg1);
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+
+	&__container {
+		max-width: 1400px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&__desk-links {
+		display: none;
+
+		@include respond(sm) {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+		}
+		@include respond(md) {
+			gap: 3rem;
+		}
+		@include respond(lg) {
+			gap: 4rem;
+		}
+	}
+
+	&__hamb {
+		display: flex;
+		align-items: center;
+
+		@include respond(sm) {
+			display: none;
+		}
+	}
+
+	&__mobile-links {
+		background-color: var(--bg1);
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0%;
+		padding: 0 1rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		transition: all 0.5s ease;
+
+		@include respond(sm) {
+			display: none;
+		}
+	}
+
+	&__mobile-links--hidden {
+		background-color: var(--bg1);
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: -100%;
+		padding: 0 1rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		transition: all 0.5s ease;
+
+		@include respond(sm) {
+			display: none;
+		}
+	}
+}

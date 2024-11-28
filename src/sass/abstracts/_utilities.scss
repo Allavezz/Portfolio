@@ -1,2 +1,14 @@
 @use './mixins' as *;
 @use './variables' as *;
+
+// Header Padding
+.header-pd {
+	padding: 1rem;
+
+	@include respond(sm) {
+		padding: 1.5rem 2rem;
+	}
+	@include respond(md) {
+		padding: 2rem 3rem;
+	}
+}

@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.btn {
+	position: relative;
+	background-color: var(--brand);
+	padding: 0.25rem 0.75rem;
+	border-radius: 40px;
+	display: inline-block;
+
+	@include respond(sm) {
+		padding: 0.25rem 1rem;
+	}
+	@include respond(md) {
+		padding: 6px 1.5rem;
+	}
+	@include respond(lg) {
+		padding: 0.5rem 1.75rem;
+		font-size: 18px;
+	}
+
+	&:hover {
+		scale: 1.02;
+	}
+}
