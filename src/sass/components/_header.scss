@@ -1,7 +1,8 @@
 @use '../abstracts' as *;
 
 .header {
-	background-color: var(--bg1);
+	background-color: transparent;
+	backdrop-filter: blur(4px);
 	width: 100%;
 	position: fixed;
 	z-index: 999;

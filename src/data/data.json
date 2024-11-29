@@ -25,5 +25,14 @@
 			"title": "Contact",
 			"link": "#contact"
 		}
-	]
+	],
+	"hero": {
+		"profession": "Full-Stack Web Developer",
+		"title1": "Hello I'm",
+		"title2": "Ricardo Alves",
+		"paragraph": "A junior full-stack web developer. Looking foward to start my journey developing exciting and challenging projects.",
+		"cv": "/assets/cv/cv_RicardoAlves.pdf",
+		"cvTitle": "Download CV",
+		"profileImg": "/assets/hero/profile-picture.png"
+	}
 }

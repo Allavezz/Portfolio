@@ -14,7 +14,7 @@ const Header = () => {
 				<div className='header__logo'>
 					<a href='/'>
 						<h2 className='logo'>
-							Allavez <span>.</span>
+							Allavez<span>.</span>
 						</h2>
 					</a>
 				</div>
