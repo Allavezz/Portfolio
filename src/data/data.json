@@ -155,7 +155,7 @@
 			"live": "https://allavezz.github.io/Landing-Page-Challenge/",
 			"icon": "FaArrowUpRightFromSquare",
 			"github": "https://github.com/Allavezz/Landing-Page-Challenge",
-			"img": "public/assets/projects/landingpage.jpg",
+			"img": "/portfolio/assets/projects/landingpage.jpg",
 			"alt": "landing page project image"
 		},
 		{
