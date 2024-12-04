@@ -36,7 +36,7 @@ const Projects = () => {
 		slidesToScroll: 1,
 		autoplay: false,
 		arrows: true,
-		swipeToSlide: true,
+		/* swipeToSlide: true, */
 		fade: true,
 		nextArrow: <SampleNextArrow />,
 		prevArrow: <SamplePrevArrow />,
