@@ -28,7 +28,7 @@ const Resume = () => {
 				<div className='resume__tab-list'>
 					<div className='resume__tab-list-heading'>
 						<h3 className='resume-h3'>Why hire me?</h3>
-						<p className='resume-p'>Find out why you should in this section</p>
+						<p className='resume-p'>Find out why you should in this section.</p>
 					</div>
 					<button className={`tab-btn btn-3 ${activeTab === 'education' ? 'tab-btn--active btn-3--active' : ''}`} onClick={() => setActiveTab('education')}>
 						Education
