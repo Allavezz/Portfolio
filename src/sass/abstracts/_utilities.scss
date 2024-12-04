@@ -5,40 +5,73 @@
 .header-pd {
 	padding: 1rem;
 
+	@include respond(ss) {
+		padding: 1rem 1.5rem;
+	}
+
 	@include respond(sm) {
-		padding: 1.5rem 2rem;
+		padding: 1.25rem 3rem;
 	}
 	@include respond(md) {
-		padding: 2rem 3rem;
+		padding: 1.5rem 4rem;
 	}
 	@include respond(lg) {
-		padding: 2rem 4rem;
+		padding: 1.75rem 6rem;
 	}
 }
 
 // Hero Padding
 .hero-pd {
-	padding: 74px 1rem 0;
+	padding: 74px 1rem 0.25rem;
+
+	@include respond(ss) {
+		padding: 74px 1.5rem 0;
+	}
 
 	@include respond(sm) {
-		padding: 96px 2rem 0;
+		padding: 88px 3rem 0;
 	}
 	@include respond(md) {
-		padding: 118px 3rem 0;
+		padding: 102px 4rem 0;
 	}
 	@include respond(lg) {
-		padding: 124px 4rem 0;
+		padding: 116px 6rem 0;
 	}
 }
 
 // Section Padding
 .section-pd {
-	padding: 2rem 1rem;
+	padding: 3rem 1rem;
+
+	@include respond(ss) {
+		padding: 3.5rem 1.5rem;
+	}
 
 	@include respond(sm) {
-		padding: 4rem 2rem;
+		padding: 4rem 3rem;
 	}
 	@include respond(md) {
-		padding: 6rem 3rem;
+		padding: 6rem 4rem;
+	}
+	@include respond(lg) {
+		padding: 8rem 6rem;
+	}
+}
+
+.section-pd-bg-b {
+	padding: 3rem 1rem 4.5rem;
+
+	@include respond(ss) {
+		padding: 3.5rem 1.5rem 5.5rem;
+	}
+
+	@include respond(sm) {
+		padding: 4rem 3rem 5rem;
+	}
+	@include respond(md) {
+		padding: 6rem 4rem 7rem;
+	}
+	@include respond(lg) {
+		padding: 8rem 6rem;
 	}
 }

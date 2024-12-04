@@ -1,0 +1,100 @@
+@use '../abstracts' as *;
+
+.contact {
+	background-color: var(--bg2);
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 2rem;
+
+		@include respond(sm) {
+			flex-direction: row;
+			align-items: start;
+		}
+	}
+
+	&__form {
+		background-color: var(--bg3);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		box-shadow: -8px 13px 8px 0px var(--bg1);
+		gap: 1.25rem;
+		padding: 2rem;
+		border-radius: 4px;
+
+		@include respond(sm) {
+			width: 60%;
+		}
+		@include respond(md) {
+			width: 50%;
+		}
+
+		p a {
+			color: var(--white);
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 1.25rem;
+
+			input,
+			textarea {
+				background-color: var(--bg2);
+				color: var(--white);
+				padding: 0.5rem;
+				border-radius: 4px;
+				border: none;
+			}
+
+			button {
+				border: none;
+				align-self: start;
+			}
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 0.75rem;
+
+		@include respond(sm) {
+			position: relative;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			gap: unset;
+
+			&:before {
+				content: '';
+				position: absolute;
+				height: 50px;
+				width: 2px;
+				background-color: var(--brand2);
+				border-radius: 4px;
+				bottom: -60%;
+				left: 47%;
+				box-shadow: -8px 13px 8px 0px var(--bg1);
+
+				@include respond(sm) {
+					height: 70px;
+					bottom: -70%;
+				}
+				@include respond(md) {
+					height: 80px;
+				}
+				@include respond(lg) {
+					width: 3px;
+					height: 118px;
+					bottom: -74%;
+				}
+			}
+		}
+	}
+}

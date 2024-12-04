@@ -26,14 +26,25 @@
 }
 
 .desk-link {
+	position: relative;
 	color: var(--text);
-
-	@include respond(lg) {
-		font-size: 18px;
-	}
 
 	&:hover {
 		color: var(--white);
+	}
+
+	&--active {
+		color: var(--brand);
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: -4px;
+			left: 0%;
+			background-color: var(--brand);
+		}
 	}
 }
 
@@ -42,10 +53,38 @@
 }
 
 .mobile-link {
+	position: relative;
 	color: var(--text);
+	font-size: 14px;
+
+	@include respond(xs) {
+		font-size: 1rem;
+	}
 
 	&:hover {
 		color: var(--white);
+	}
+
+	&--active {
+		color: var(--brand);
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: -4px;
+			left: 0%;
+			background-color: var(--brand);
+		}
+	}
+}
+
+.mobile-hire-btn {
+	font-size: 14px;
+
+	@include respond(xs) {
+		font-size: 1rem;
 	}
 }
 
@@ -74,10 +113,10 @@
 		font-size: 2.5rem;
 	}
 	@include respond(md) {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 	@include respond(lg) {
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
 
 	span {
@@ -92,9 +131,10 @@
 	@include respond(md) {
 		font-size: 1rem;
 	}
-	@include respond(lg) {
-		font-size: 1.25rem;
-	}
+}
+
+.hero-a {
+	box-shadow: -8px 13px 8px 0px var(--bg2);
 }
 
 .hero-social {
@@ -114,4 +154,216 @@
 	&:hover {
 		scale: 1.05;
 	}
+}
+
+.social-icon {
+	box-shadow: -8px 13px 8px 0px var(--bg2);
+}
+
+// Resume Typography
+.resume-h3 {
+	color: var(--white);
+	font-size: 1.25rem;
+
+	@include respond(ss) {
+		font-size: 1.5rem;
+	}
+	@include respond(sm) {
+		font-size: 1.75rem;
+	}
+	@include respond(md) {
+		font-size: 2rem;
+	}
+	@include respond(lg) {
+		font-size: 2.5rem;
+	}
+}
+
+.resume-p {
+	color: var(--text);
+	font-size: 0.75rem;
+
+	@include respond(md) {
+		font-size: 1rem;
+	}
+}
+
+.tab-btn {
+	font-weight: 500;
+	box-shadow: -8px 13px 8px 0px var(--bg1);
+
+	@include respond(md) {
+		font-size: 1rem;
+	}
+}
+
+.resume-sub-h3 {
+	color: var(--white);
+	font-size: 18px;
+
+	@include respond(ss) {
+		font-size: 1.25rem;
+	}
+	@include respond(sm) {
+		font-size: 1.5rem;
+	}
+	@include respond(md) {
+		font-size: 1.75rem;
+	}
+	@include respond(lg) {
+		font-size: 2rem;
+	}
+}
+
+.resume-sub-p {
+	color: var(--text);
+	font-size: 0.75rem;
+
+	@include respond(md) {
+		font-size: 1rem;
+	}
+}
+
+.resume-sub-p2 {
+	color: var(--white);
+	font-size: 14px;
+
+	@include respond(md) {
+		font-size: 18px;
+	}
+}
+
+.resume-education-year {
+	color: var(--brand);
+}
+
+.resume-education-title {
+	color: var(--white);
+}
+
+.resume-education-dot {
+	color: var(--brand);
+	font-size: 0.5rem;
+}
+
+.resume-skills-icon {
+	font-size: 2rem;
+	color: var(--white);
+
+	@include respond(xs) {
+		font-size: 2.25rem;
+	}
+	@include respond(ss) {
+		font-size: 2.5rem;
+	}
+	@include respond(sm) {
+		font-size: 2.75rem;
+	}
+	@include respond(md) {
+		font-size: 3rem;
+	}
+}
+
+// Projects Typography
+.projects__number {
+	color: transparent;
+	font-weight: 500;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: var(--white);
+	font-size: 2rem;
+
+	@include respond(ss) {
+		font-size: 2.25rem;
+	}
+	@include respond(sm) {
+		font-size: 2.75rem;
+	}
+	@include respond(md) {
+		font-size: 3.25rem;
+	}
+	@include respond(lg) {
+		font-size: 3.75rem;
+	}
+}
+
+.projects__title {
+	color: var(--white);
+	font-size: 1.25rem;
+
+	@include respond(ss) {
+		font-size: 1.5rem;
+	}
+	@include respond(sm) {
+		font-size: 1.75rem;
+	}
+	@include respond(md) {
+		font-size: 2rem;
+	}
+	@include respond(lg) {
+		font-size: 2.5rem;
+	}
+}
+
+.projects__description {
+	color: var(--text);
+	font-size: 0.75rem;
+
+	@include respond(md) {
+		font-size: 1rem;
+	}
+}
+
+.projects__stack {
+	color: var(--brand);
+	font-size: 18px;
+
+	@include respond(sm) {
+		font-size: 1.25rem;
+	}
+	@include respond(md) {
+		font-size: 1.5rem;
+	}
+}
+
+// Contact Typography
+.contact-h3 {
+	color: var(--brand);
+	font-size: 18px;
+
+	@include respond(sm) {
+		font-size: 1.25rem;
+	}
+	@include respond(md) {
+		font-size: 1.5rem;
+	}
+}
+
+.contact-p {
+	color: var(--text);
+	font-size: 0.75rem;
+
+	@include respond(md) {
+		font-size: 1rem;
+	}
+}
+
+.contact-social {
+	color: var(--white);
+	font-size: 1.25rem;
+
+	@include respond(sm) {
+		font-size: 1.5rem;
+	}
+
+	@include respond(lg) {
+		font-size: 2rem;
+	}
+
+	&:hover {
+		scale: 1.05;
+	}
+}
+
+.social-icon2 {
+	box-shadow: -8px 13px 8px 0px var(--bg1);
 }

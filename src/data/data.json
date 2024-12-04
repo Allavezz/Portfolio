@@ -3,17 +3,12 @@
 		{
 			"id": "home",
 			"title": "Home",
-			"link": "/"
+			"link": ""
 		},
 		{
-			"id": "about",
-			"title": "About",
-			"link": "#about"
-		},
-		{
-			"id": "skills",
-			"title": "Skills",
-			"link": "#skills"
+			"id": "resume",
+			"title": "Resume",
+			"link": "#resume"
 		},
 		{
 			"id": "projects",
@@ -31,8 +26,184 @@
 		"title1": "Hello I'm",
 		"title2": "Ricardo Alves",
 		"paragraph": "A junior full-stack web developer. Looking foward to start my journey developing exciting and challenging projects.",
-		"cv": "/assets/cv/cv_RicardoAlves.pdf",
+		"cv": "/portfolio/assets/cv/RicardoAlvesCV.pdf",
 		"cvTitle": "Download CV",
-		"profileImg": "/assets/hero/profile-picture.png"
-	}
+		"profileImg": "/portfolio/assets/hero/profileB&W.png"
+	},
+	"resume": {
+		"about": {
+			"title": "About me",
+			"description": "I'm Ricardo Alves, a passionate and dedicated junior full-stack developer from Lisbon, enthusiastic about growing in the tech field. I'm available for freelance or contract opportunities.",
+			"info": [
+				{
+					"fieldName": "Name",
+					"fieldValue": "Ricardo Alves"
+				},
+				{
+					"fieldName": "Email",
+					"fieldValue": "ricardogeraldesalves@gmail.com"
+				},
+				{
+					"fieldName": "Experience",
+					"fieldValue": "N/A 🥹"
+				},
+				{
+					"fieldName": "Role",
+					"fieldValue": "Junior Full-Stack"
+				},
+				{
+					"fieldName": "Nationality",
+					"fieldValue": "Portuguese"
+				},
+				{
+					"fieldName": "Freelance",
+					"fieldValue": "Available"
+				},
+				{
+					"fieldName": "Location",
+					"fieldValue": "Lisbon"
+				},
+				{
+					"fieldName": "Languages",
+					"fieldValue": "Portuguese, English"
+				}
+			]
+		},
+		"education": {
+			"title": "My education",
+			"description": "I made a career shift in 2023, and this is my education in the field so far.",
+			"info": [
+				{
+					"year": "2023",
+					"title": "The Complete Web Development Bootcamp",
+					"link": "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
+					"school": "Udemy"
+				},
+				{
+					"year": "2023 - 2024",
+					"title": "Academia FLAGProfessional Full Stack Web Development",
+					"link": "https://flag.pt/curso/full-stack-web-developer/",
+					"school": "FLAG"
+				}
+			]
+		},
+		"skills": {
+			"title": "My skills",
+			"description": "Here are the skills I've acquired so far. I'm eager to apply them in projects that will help me solidify and master these abilities.",
+			"skills": [
+				{
+					"name": "HTML5",
+					"icon": "FaHtml5"
+				},
+				{
+					"name": "CSS3",
+					"icon": "FaCss3"
+				},
+				{
+					"name": "Sass",
+					"icon": "FaSass"
+				},
+				{
+					"name": "Tailwind CSS",
+					"icon": "RiTailwindCssFill"
+				},
+				{
+					"name": "JavaScript",
+					"icon": "FaJs"
+				},
+				{
+					"name": "React",
+					"icon": "FaReact"
+				},
+				{
+					"name": "MySQL",
+					"icon": "SiMysql"
+				},
+				{
+					"name": "PHP",
+					"icon": "FaPhp"
+				},
+				{
+					"name": "Laravel",
+					"icon": "FaLaravel"
+				},
+				{
+					"name": "NodeJs",
+					"icon": "FaNodeJs"
+				},
+				{
+					"name": "Express",
+					"icon": "SiExpress"
+				},
+				{
+					"name": "MongoDB",
+					"icon": "SiMongodb"
+				}
+			]
+		},
+		"experience": {
+			"title": "My experience",
+			"description": "Currently looking for my first opportunities in the field. Help me get rid of these skeletons!"
+		}
+	},
+	"projects": [
+		{
+			"number": "01",
+			"title": "My first Project",
+			"description": "This is my first project, a landing page created to apply the HTML and CSS skills from my course. It features a responsive design that adapts to various screen sizes, using Flexbox and media queries to ensure a smooth user experience.",
+			"technologies": "HTML5, CSS3, JavaScript",
+			"live": "https://allavezz.github.io/Landing-Page-Challenge/",
+			"icon": "FaArrowUpRightFromSquare",
+			"github": "https://github.com/Allavezz/Landing-Page-Challenge",
+			"img": "public/assets/projects/landingpage.jpg",
+			"alt": "landing page project image"
+		},
+		{
+			"number": "02",
+			"title": "2Wheels Adventure",
+			"description": "This is my second project, developed for the frontend part of my course at FLAG. It showcases an advanced use of React, with an emphasis on good HTML semantics and clean CSS styling. The project features dynamic components and a responsive layout.",
+			"technologies": "Sass, React",
+			"live": "https://allavezz.github.io/2wheels-adventure/",
+			"icon": "FaArrowUpRightFromSquare",
+			"github": "https://github.com/Allavezz/2wheels-adventure",
+			"img": "/portfolio/assets/projects/frontendProject.jpg",
+			"alt": "frontend project image"
+		},
+		{
+			"number": "03",
+			"title": "Adventure Parts",
+			"description": "This is my third project, a backend-focused e-commerce website built with PHP as part of my course at FLAG. It includes user authentication, a complete CMS area, and implements modern security practices to prevent SQL Injection, XSS, and CSRF attacks.",
+			"technologies": "Sass, PHP, JavaScript",
+			"github": "https://github.com/Allavezz/adventure_parts",
+			"img": "/portfolio/assets/projects/backendProject.jpg",
+			"alt": "backend project image"
+		},
+		{
+			"number": "04",
+			"title": "My portfolio",
+			"description": "This portfolio, my fourth project created after completing a full-stack web development course, is designed to showcase my current work as well as upcoming projects. It also serves as a dynamic project in itself, evolving and improving over time as my skills grow and my expertise expands.",
+			"technologies": "Sass, React",
+			"github": "https://github.com/Allavezz/portfolio",
+			"img": "/portfolio/assets/projects/portfolio.jpg",
+			"alt": "portfolio project image"
+		}
+	],
+	"socials": [
+		{
+			"icon": "FaLinkedinIn",
+			"link": "https://www.linkedin.com/in/allavez/"
+		},
+		{
+			"icon": "FaGithub",
+			"link": "https://github.com/Allavezz"
+		},
+		{
+			"icon": "FaXTwitter",
+			"link": "https://x.com/Ricardo99099025"
+		},
+		{
+			"icon": "FaInstagram",
+			"link": "https://www.instagram.com/ricardoallavez/"
+		}
+	]
 }

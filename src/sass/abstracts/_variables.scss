@@ -6,4 +6,9 @@
 	--text: #b6b7b7;
 	--brand: #ffc86b;
 	--brand2: #f0bf6c;
+
+	// Gradients
+	--gd1: linear-gradient(180deg, rgba(52, 54, 58, 1) 0%, rgba(49, 51, 59, 1) 100%);
+	--gd2: linear-gradient(0deg, rgba(52, 54, 58, 1) 0%, rgba(49, 51, 59, 1) 100%);
+	--rgd1: radial-gradient(circle, rgba(61, 62, 66, 0) 0%, rgba(61, 62, 66, 0.3) 50%, rgba(61, 62, 66, 1) 72%);
 }
